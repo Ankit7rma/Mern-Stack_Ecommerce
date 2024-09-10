@@ -4,26 +4,30 @@ Welcome to **Fusion Electronics**, a **MERN-Stack E-commerce Application**! This
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [User Interface](#user-interface)
-   - [Home Page](#home-page)
-   - [Full Product List](#full-product-list)
-   - [Cart Page](#cart-page)
-   - [Checkout Page](#checkout-page)
-3. [Features](#features)
-4. [Technologies Used](#technologies-used)
-5. [Getting Started](#getting-started)
+- [Fusion Electronics: A MERN-Stack E-commerce Application](#fusion-electronics-a-mern-stack-e-commerce-application)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [User Interface](#user-interface)
+    - [Home Page](#home-page)
+    - [Full Product List](#full-product-list)
+    - [Product Details Page](#product-details-page)
+    - [Cart Page](#cart-page)
+    - [Checkout Page](#checkout-page)
+    - [Order Confirmation](#order-confirmation)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-6. [Project Structure](#project-structure)
-7. [Running the Application](#running-the-application)
-8. [Testing the APIs](#testing-the-apis)
-9. [Swagger API Documentation](#swagger-api-documentation)
-10. [Deployment](#deployment)
-11. [Containerization](#containerization)
-12. [Contributing](#contributing)
-13. [License](#license)
-14. [Creator](#creator)
+  - [Running the Application](#running-the-application)
+  - [Testing the APIs](#testing-the-apis)
+  - [Swagger API Documentation](#swagger-api-documentation)
+  - [Deployment](#deployment)
+  - [Containerization](#containerization)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Creator](#creator)
 
 ## Introduction
 
@@ -70,41 +74,45 @@ This project is a demonstration of building an e-commerce application using the 
 ## Features
 
 - **Product Management:**
-    - View a list of products.
-    - View detailed product information.
-    - Add products to the shopping cart.
+
+  - View a list of products.
+  - View detailed product information.
+  - Add products to the shopping cart.
 
 - **Shopping Cart:**
-    - View items in the shopping cart.
-    - Remove items from the cart.
-    - Calculate total amount of items in the cart.
+
+  - View items in the shopping cart.
+  - Remove items from the cart.
+  - Calculate total amount of items in the cart.
 
 - **Checkout Process:**
-    - Enter billing, shipping, and payment information.
-    - Simulate the order creation process on the backend.
-    - Receive confirmation of order success.
+  - Enter billing, shipping, and payment information.
+  - Simulate the order creation process on the backend.
+  - Receive confirmation of order success.
 
 ## Technologies Used
 
 - **Frontend:**
-    - React.js
-    - Material-UI for styling
-    - Axios for API requests
-    - `react-credit-cards-2` for credit card visualization
+
+  - React.js
+  - Material-UI for styling
+  - Axios for API requests
+  - `react-credit-cards-2` for credit card visualization
 
 - **Backend:**
-    - Node.js
-    - Express.js
-    - MongoDB (with Mongoose ODM)
-    - Axios for external API requests
-    - Swagger for API documentation
-    - Nodemon for server hot-reloading
+
+  - Node.js
+  - Express.js
+  - MongoDB (with Mongoose ODM)
+  - Axios for external API requests
+  - Swagger for API documentation
+  - Nodemon for server hot-reloading
 
 - **Development Tools:**
-    - Jetbrains WebStorm (IDE)
-    - Postman (for API testing)
-    - Git (version control)
-    - npm (package manager)
+  - Jetbrains WebStorm (IDE)
+  - Postman (for API testing)
+  - Git (version control)
+  - npm (package manager)
 
 ## Project Structure
 
@@ -175,12 +183,14 @@ Before running this project, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/hoangsonww/fullstack-ecommerce.git
+   git clone https://github.com/Ankit7rma/Mern-Stack_Ecommerce
    cd fullstack-ecommerce
    ```
 
 2. Install project dependencies:
+
    ```bash
    # Install server dependencies
    cd backend
@@ -190,40 +200,39 @@ Before running this project, ensure you have the following installed:
    cd ..
    npm install
    ```
-   
+
 3. Set up the backend:
 
    - Create a `.env` file in the `backend/` directory and add the following environment variables:
      ```
      MONGO_URI=mongodb://localhost:27017/Ecommerce-Products
      ```
- 
-    - Ensure that your MongoDB server is running. If you're using Mac, you can start the MongoDB server with the following command:
-     ```bash
-     brew services start mongodb-community
-     ``` 
+   - Ensure that your MongoDB server is running. If you're using Mac, you can start the MongoDB server with the following command:
+
+   ```bash
+   brew services start mongodb-community
+   ```
 
    - Seed the database with sample data:
      ```bash
      cd backend/seed
      node productSeeds.js dev
      ```
-     
    - Run the backend server: (first `cd` into the backend directory)
      ```bash
      cd ..
      npm start
-     ``` 
-     
+     ```
+
 4. Set up the frontend:
    - First, `cd` into the `root` directory if you are not already there:
      ```bash
      cd ..
      ```
      Or
-        ```bash
-        cd fullstack-ecommerce
-        ```
+     ```bash
+     cd fullstack-ecommerce
+     ```
    - Start the frontend development server:
      ```bash
      npm start
@@ -259,6 +268,7 @@ To deploy the application:
 ## Containerization
 
 This project can be containerized using Docker. First, ensure that Docker Desktop is running on your system. Then, to create a Docker image, run the following command:
+
 ```bash
 docker compose up --build
 ```
@@ -279,8 +289,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Creator
 
-- **Son Nguyen** - [hoangsonww](https://github.com/hoangsonww)
-- **Email:** [hoangson091104@gmail.com](mailto:hoangson091104@gmail.com).
+- **Ankit Sharma** - [Ankit](https://github.com/Ankit7rma)
+- **Email:** [ankitsharma290101@gmail.com](gmail).
 
 ---
 
